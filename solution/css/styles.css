@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    background: #666;
+    background: #00B7F1;
     -webkit-background-size: 1px 44px;
     -moz-background-size: 1px 44px;
     -ms-background-size: 1px 44px;
@@ -23,7 +23,7 @@ body {
     height: 44px;
     line-height: 44px;
     width: 100%;
-    color: #fff;
+    color: #000;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     border-bottom: solid 1px #eee;
@@ -65,7 +65,7 @@ body {
 }
 
 input[type="search"] {
-    width:100%;
+  width:100%;
 	border: none;
 	border-radius: 4px;
 	padding: 4px 0px 2px 2px;
