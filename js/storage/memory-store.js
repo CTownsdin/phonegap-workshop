@@ -7,7 +7,7 @@ var MemoryStore = function(successCallback, errorCallback) {
             return fullName.toLowerCase().indexOf(searchKey.toLowerCase()) > -1;
         });
         callLater(callback, employees);
-    }
+    };
 
     this.findById = function(id, callback) {
         var employees = this.employees;
@@ -20,7 +20,7 @@ var MemoryStore = function(successCallback, errorCallback) {
             }
         }
         callLater(callback, employee);
-    }
+    };
 
     // Used to simulate async calls. This is done to provide a consistent interface with stores (like WebSqlStore)
     // that use async data access APIs
@@ -30,10 +30,10 @@ var MemoryStore = function(successCallback, errorCallback) {
                 callback(data);
             });
         }
-    }
+    };
 
     this.employees = [
-            {"id": 1, "firstName": "Len", "lastName": "Charest", "title":"Engineer/Architech Mimeo, Redmond", "managerId": 0, "city":"Redmond, WA", "cellPhone":"425-555-1212", "officePhone":"425-555-1212", "email":"Len@Mimeo.com"},
+            {"id": 1, "firstName": "Len", "lastName": "Charest", "title":"Engineer/Architect Mimeo, Redmond", "managerId": 0, "city":"Redmond, WA", "cellPhone":"425-555-1212", "officePhone":"425-555-1212", "email":"Len@Mimeo.com"},
             {"id": 2, "firstName": "Michael", "lastName": "Scott", "title":"Regional Manager", "managerId": 1, "city":"Scranton, PA", "cellPhone":"570-865-2536", "officePhone":"570-123-4567", "email":"michael@dundermifflin.com"},
             {"id": 3, "firstName": "Dwight", "lastName": "Schrute", "title":"Assistant Regional Manager", "managerId": 2, "city":"Scranton, PA", "cellPhone":"570-865-1158", "officePhone":"570-843-8963", "email":"dwight@dundermifflin.com"},
             {"id": 4, "firstName": "Jim", "lastName": "Halpert", "title":"Assistant Regional Manager", "managerId": 2, "city":"Scranton, PA", "cellPhone":"570-865-8989", "officePhone":"570-968-5741", "email":"dwight@dundermifflin.com"},
@@ -53,4 +53,4 @@ var MemoryStore = function(successCallback, errorCallback) {
 
     callLater(successCallback);
 
-}
+};
